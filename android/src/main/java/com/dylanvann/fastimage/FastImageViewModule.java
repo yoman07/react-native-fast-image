@@ -47,4 +47,10 @@ class FastImageViewModule extends ReactContextBaseJavaModule {
             }
         });
     }
+
+    @ReactMethod
+    public void cancelPreload() {
+        //TODO: unsupported
+    }
+
 }

@@ -33,5 +33,10 @@ RCT_EXPORT_METHOD(preload:(nonnull NSArray<FFFastImageSource *> *)sources)
     [[SDWebImagePrefetcher sharedImagePrefetcher] prefetchURLs:urls];
 }
 
+RCT_EXPORT_METHOD(cancelPreload)
+{
+    [[SDWebImagePrefetcher sharedImagePrefetcher] cancelPrefetching];
+}
+
 @end
 
